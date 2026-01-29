@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "DM Mono";
+    src: url(./fonts/DMMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(./fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+    --light: #fff;
+    --dark: #0f0f0f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a, p {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "DM Mono", monospace;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #000;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100svh;
+    background-color: var(--dark);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    will-change: clip-path;
+    z-index: 0;
+}
+
+.hero-overlay .counter {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    color: var(--light);
+}
+
+.hero-overlay .counter h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.overlay-text-container {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.overlay-text-container .overlay-text {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(2rem);
+    will-change: transform;
+}
+
+.overlay-text-container .overlay-text p {
+    color: var(--light);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.hero-images {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    will-change: gap;
+}
+
+.hero-images .img {
+    width: 10vw;
+    aspect-ratio: 5/7;
+    transform: translateY(50%) scale(0.5);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0;
+    will-change: opacity, transform, clip-path;
+}
+
+.hero-header {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15vw;
+    font-weight: 500;
+    line-height: 0.85;
+}
+
+.hero-header h1 .word {
+    transform: translateY(100%);
+    will-change: transform;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .hero-overlay .counter {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .hero-images {
+        padding: 0 0.5rem;
+        gap: 2.5vw;
+    }
+
+    .hero-images .img {
+        width: 20vw;
+    }
+}
+
