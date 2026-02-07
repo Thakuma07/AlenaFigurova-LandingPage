@@ -1,6 +1,6 @@
-# Alena Figurova | High-End Fashion Portfolio Landing Page
+# Alena Figurova | Fashion Portfolio Landing Page
 
-![Project Preview Banner](https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop)
+<img width="1920" height="1080" alt="Screenshot (247)" src="https://github.com/user-attachments/assets/6cfea075-4aef-4c3c-b332-e3e0e653d42a" />
 
 A sophisticated, highly animated landing page designed for a high-end fashion portfolio. Built with a focus on motion design and minimalist aesthetics, this project showcases a seamless user experience using modern web technologies and the GreenSock Animation Platform (GSAP).
 
@@ -52,12 +52,5 @@ To run this project locally, follow these simple steps:
 
 The project embodies a **minimalist yet impactful** design. By using a dark-to-light transition through the animation timeline, it creates a sense of "reveal" that mirrors the unveiling of a new fashion collection. The overlap of the large background header and the scaled center image provides depth and scale.
 
-## 👨‍💻 Author
 
-**Arkyadeep Pal**
-- Website: [thakuma.dev](https://thakuma.dev)
-- Portfolio: [GitHub](https://github.com/Thakuma07)
 
----
-
-*Designed and Developed with ❤️ for Fashion Enthusiasts.*
